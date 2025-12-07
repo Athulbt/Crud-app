@@ -1,0 +1,55 @@
+extends layout
+
+block content
+    h2 Add New User
+    form(method="POST", action="/add-user")
+        .w3-row-padding
+            .w3-half
+                .form-group
+                    label First Name *
+                    input.w3-input.w3-border(type="text", name="firstName", required)
+            .w3-half
+                .form-group
+                    label Last Name *
+                    input.w3-input.w3-border(type="text", name="lastName", required)
+        
+        .form-group
+            label Date of Birth *
+            input.w3-input.w3-border(type="date", name="dateOfBirth", required)
+        
+        .form-group
+            label Email *
+            input.w3-input.w3-border(type="email", name="email", required)
+        
+        .form-group
+            label Phone Number *
+            input.w3-input.w3-border(type="tel", name="phoneNumber", required)
+        
+        .form-group
+            label Address 1 *
+            input.w3-input.w3-border(type="text", name="address1", required)
+        
+        .form-group
+            label Address 2
+            input.w3-input.w3-border(type="text", name="address2")
+        
+        .w3-row-padding
+            .w3-half
+                .form-group
+                    label City *
+                    input.w3-input.w3-border(type="text", name="city", required)
+            .w3-quarter
+                .form-group
+                    label Postal Code *
+                    input.w3-input.w3-border(type="text", name="postalCode", required)
+            .w3-quarter
+                .form-group
+                    label Country *
+                    input.w3-input.w3-border(type="text", name="country", required)
+        
+        .form-group
+            label User Notes
+            textarea.w3-input.w3-border(name="userNotes", rows="4")
+        
+        button.w3-button.w3-green(type="submit") Add User
+        a.w3-button.w3-grey(href="/users") Cancel

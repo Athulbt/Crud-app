@@ -1,0 +1,61 @@
+#Checklist
+1. Pre-requisites
+    - Created project directory crud-app
+    - Initialize Node.js project with npm init -y
+    - Install Express, Mongoose, PUG dependencies
+    - Install Nodemon for development
+    - Create folder structure
+    - Configure package.json scripts (start, dev)
+
+2. Configure Backend
+    - Create Express server in index.js
+    - Set up middleware
+    - Configure PUG
+    - Establish MongoDB connection
+    - Create User schema with all required fields
+
+3. To setup database
+    - Create MongoDB Atlas account
+    - Set up free cluster
+    - Configure network access (0.0.0.0/0)
+    - Test database connection
+    - Verify connection string in application
+
+4. CRUD templates
+    - Create layout.pug with navigation
+    - Build display.pug for user table
+    - Create add.pug with user form
+    - Build update.pug with edit form
+    - Used W3CSS styling framework
+
+5. Testing CRUD operations
+    -ADD
+        - Add new user with required fields
+        - Test form validation
+        - Verify data saves to database
+    -READ
+        - Display multiple users in table after adding
+        - Show all user fields in table
+    -UPDATE
+        - Edit existing user information
+    -DELETE
+        - Delete user from update page
+        - Confirmation before deletion
+        - User removed from database
+        - Redirect after deletion
+
+6. ERROR HANDLING
+    - Try-catch blocks for database operations
+    - Error messages for failed operations
+    - Handle missing user scenarios
+    - Form input validation
+    - User feedback for actions
+
+7. FINAL VERIFICATION
+    - All 3 pages functional (Add, Update, Display)
+    - Full CRUD operations working
+    - MongoDB integration successful
+    - W3CSS styling applied
+    - Form validation working
+    - Error handling in place
+    - Responsive design confirmed

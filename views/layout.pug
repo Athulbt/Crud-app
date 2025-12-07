@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title CRUD APP
+    link(rel="stylesheet", href="https://www.w3schools.com/w3css/4/w3.css")
+    style.
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .menu { margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+body
+    .w3-container
+        .menu
+            h1 CRUD APP
+            .w3-bar.w3-light-grey
+                a.w3-bar-item.w3-button(href="/users") View Users
+                a.w3-bar-item.w3-button(href="/add-user") Add User
+        .container
+            block content
